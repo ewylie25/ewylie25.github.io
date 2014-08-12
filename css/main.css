@@ -91,6 +91,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.gray{
+	color:#222;
+}
+
 .nav{
     padding-top: 15px;
     padding-bottom: 5px;
@@ -147,18 +151,10 @@ textarea {
     margin-bottom:13px;
 }
 
-.learn-more {
-    background-color: #f7f7f7;
-}
-
-.learn-more h3 {
-    font-family: 'Shift', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.learn-more a {
-    color: #00b0ff;
+.footer{
+	font-size:11px;
+	position: relative;
+	text-align: center;
 }
 
 
