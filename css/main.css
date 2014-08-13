@@ -90,11 +90,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-.gray{
-	color:#222;
+.name{
+	color: #5a5a5a;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 10px;
 }
-
 .nav{
     padding-top: 15px;
     padding-bottom: 5px;
