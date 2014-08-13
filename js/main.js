@@ -1,37 +1,52 @@
+
+
+var enter = function(new_slide){
+	var currentSlide = $('.active-slide');
+    var nextSlide = $(new_slide);
+        
+    currentSlide.fadeOut(600);
+    currentSlide.removeClass("active-slide");
+    nextSlide.fadeIn(600);
+    nextSlide.toggleClass('active-slide');
+};
+
+var exit = function(){
+	var currentSlide = $(".active-slide");
+    var nextSlide = $(".intro");
+        
+    currentSlide.fadeOut(600);
+    currentSlide.removeClass("active-slide");
+    nextSlide.fadeIn(600);
+    nextSlide.addClass("active-slide");
+};
+
+
+
 var main = function(){
-    var x;
-    var enter_key = {
-    					'.name':'.about_me',
-    					'.home_link':'.home',
-    					'.res_link': '.resume',
-    					'.li_glyph':'.linked_in',
-    					'.git_glyph':'.github',
-    					'.goog_glyph':'.google_plus',
-    					'.fb_glyph':'.facebook',
-    					'.sk_glyph':'.skype'
-    				};
+    $('.name').mouseenter(enter('.about_me'));
+    $('.name').mouseleave(exit());
     
-    for(x in enter_key){
-    	$(x).mouseenter(function(){
-        	var currentSlide = $('.active-slide');
-        	var nextSlide = $(enter_key[x]);
-        
-        	currentSlide.fadeOut(600);
-        	currentSlide.removeClass("active-slide");
-        	nextSlide.fadeIn(600);
-        	nextSlide.addClass('active-slide');
-    	});
-    	
-    	$(x).mouseleave(function(){
-        	var currentSlide = $('.active-slide');
-        	var nextSlide = $('.intro');
-        
-        	currentSlide.fadeOut(600);
-        	currentSlide.removeClass("active-slide");
-        	nextSlide.fadeIn(600);
-        	nextSlide.addClass('active-slide');
-    	});
-    } 
+    $('.home_link').mouseenter(enter('.home'));
+    $('.home_link').mouseleave(exit());
+    
+    $('.res_link').mouseenter(enter('.resume'));
+    $('.res_link').mouseleave(exit());
+    
+    $('.li_glyph').mouseenter(enter('.linked_in'));
+    $('.li_glyph').mouseleave(exit());
+    
+    $('.git_glyph').mouseenter(enter('.github'));
+    $('.git_glyph').mouseleave(exit());
+    
+    $('.goog_glyph').mouseenter(enter('.google_plus'));
+    $('.goog_glyph').mouseleave(exit());
+    
+    $('.fb_glyph').mouseenter(enter('.facebook'));
+    $('.fb_glyph').mouseleave(exit());
+    
+    $('.sk_glyph').mouseenter(enter('.skype'));
+    $('.sk_glyph').mouseleave(exit());
+	 
 };
 
 
