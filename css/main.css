@@ -96,6 +96,10 @@ textarea {
     font-weight: bold;
     padding: 14px 10px;
 }
+.name:hover{
+	text-decoration:underline;
+}
+
 .nav{
     padding-top: 15px;
     padding-bottom: 5px;
@@ -113,6 +117,12 @@ textarea {
     display: inline;
 }
 
+.nav img{
+	border-style:solid;
+	border-width:medium;
+	color: #FFFFFF;
+}
+
 .slider {
     background-image:url('../img/rsz_panorama.jpg');
     height: 384px;
@@ -128,18 +138,19 @@ textarea {
 .slide .container {
     text-align: center;
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 0.97;
     position: relative;
     top:50px;
 }
 
 .slide h5 {
-    font-size: 40px;
+    font-size: 24px;
     font-family: 'Shift', sans-serif;
+    font-weight:bold;
 }
 
 .slide p {
-    font-size: 20px;
+    font-size: 18px;
     color: #222;
 }
 

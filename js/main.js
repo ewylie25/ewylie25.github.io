@@ -9,6 +9,7 @@ var main = function(){
     var skype = $('.sk_glyph');
 
     name.mouseenter(function(){
+    	$(this).animate({color:'#FF0066'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.about_me');
 
@@ -18,6 +19,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
         });
     name.mouseleave(function(){
+    	$(this).animate({color:'#5a5a5a'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -28,6 +30,7 @@ var main = function(){
     });
     
     home.mouseenter(function(){
+    	$(this).children().animate({color:'#FF9900'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.home');
 
@@ -37,6 +40,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     home.mouseleave(function(){
+    	$(this).children().animate({color:'#5a5a5a'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -47,6 +51,7 @@ var main = function(){
     });
     
     resume.mouseenter(function(){
+    	$(this).children().animate({color:'#FFFF00'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.resume');
 
@@ -56,6 +61,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     resume.mouseleave(function(){
+    	$(this).children().animate({color:'#5a5a5a'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -66,6 +72,7 @@ var main = function(){
     });
 
     linked_in.mouseenter(function(){
+    	$(this).children().animate({color:'#66FF33'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.linked_in');
 
@@ -75,6 +82,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     linked_in.mouseleave(function(){
+    	$(this).children().animate({color:'#FFFFFF'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -85,6 +93,7 @@ var main = function(){
     });
     
     github.mouseenter(function(){
+    	$(this).children().animate({color:'#00FFFF'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.github');
 
@@ -94,6 +103,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     github.mouseleave(function(){
+    	$(this).children().animate({color:'#FFFFFF'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -104,6 +114,7 @@ var main = function(){
     });
     
     google.mouseenter(function(){
+    	$(this).children().animate({color:'#0000FF'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.google_plus');
 
@@ -113,6 +124,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     google.mouseleave(function(){
+    	$(this).children().animate({color:'#FFFFFF'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -123,6 +135,7 @@ var main = function(){
     });
     
     facebook.mouseenter(function(){
+    	$(this).children().animate({color:'#6600CC'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.facebook');
 
@@ -132,6 +145,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     facebook.mouseleave(function(){
+    	$(this).children().animate({color:'#FFFFFF'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -142,6 +156,7 @@ var main = function(){
     });
     
     skype.mouseenter(function(){
+    	$(this).children().animate({color:'#3D003D'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.skype');
 
@@ -151,6 +166,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     skype.mouseleave(function(){
+    	$(this).children().animate({color:'#FFFFFF'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
