@@ -126,17 +126,16 @@ textarea {
 }
 
 .slide .container {
+    text-align: center;
     background-color: #fff;
-    opacity: 0.7;
+    opacity: 0.9;
     position: relative;
-    top:100px;
+    top:50px;
 }
 
-.slide h1 {
-    color: #222;
-    font-size: 48px;
+.slide h5 {
+    font-size: 40px;
     font-family: 'Shift', sans-serif;
-    font-weight: bold;
 }
 
 .slide p {
@@ -144,17 +143,19 @@ textarea {
     color: #222;
 }
 
-.neighborhood-guides{
+
+.detailed_links {
     background-color:#efefef;
     border-bottom:1px solid #dbdbdb;
+    text-align: center;
 }
 
-.neighborhood-guides h2{
+.detailed_links h2{
     color:#393c3d;
     font-size:24px;
 }
 
-.neighborhood-guides p{
+.detailed_links p{
     font-size:15px;
     margin-bottom:13px;
 }
