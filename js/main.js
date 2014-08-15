@@ -1,185 +1,158 @@
 var main = function(){
-    var name = $( '.name' );
-    var resume = $('.res_link');
-    var linked_in =  $('.li_glyph');
-    var github = $('.git_glyph');
-    var google = $('.goog_glyph');
-    var facebook = $('.fb_glyph');
-    var skype = $('.sk_glyph');
 
+    var name = $( 'span.about-me');
+    var about = $('div.about-me');
     name.mouseenter(function(){
     	$(this).animate({color:'#FF0066'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.about_me');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        about.show(600);
         });
     name.mouseleave(function(){
     	$(this).animate({color:'#fff'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        about.hide(600);
     });
-    
-    resume.mouseenter(function(){
+
+    var download = $('span.resume');
+    var resume = $('div.resume');
+    download.mouseenter(function(){
     	$(this).children().animate({color:'#FF9900'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.resume');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        resume.show(600);
     });
-    resume.mouseleave(function(){
+    download.mouseleave(function(){
     	$(this).children().animate({color:'#fff'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        resume.hide(600);
     });
 
+    var linked_in =  $('span.linked_in');
+    var linked_in_info = $('div.linked_in');
     linked_in.mouseenter(function(){
     	$(this).children().animate({color:'#66FF33'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.linked_in');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        linked_in_info.show(600);
     });
     linked_in.mouseleave(function(){
     	$(this).children().animate({color:'#222'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        linked_in_info.hide(600);
     });
-    
+
+
+    var github = $('span.github');
+    var github_info = $('div.github');
     github.mouseenter(function(){
     	$(this).children().animate({color:'#00FFFF'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.github');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        github_info.show(600);
     });
     github.mouseleave(function(){
     	$(this).children().animate({color:'#222'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        github_info.hide(600);
     });
-    
+
+    var google = $('span.google_plus');
+    var google_info = $('div.google_plus');
     google.mouseenter(function(){
     	$(this).children().animate({color:'#0000FF'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.google_plus');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        google_info.show(600);
     });
     google.mouseleave(function(){
     	$(this).children().animate({color:'#222'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        google_info.hide(600);
     });
-    
+
+    var facebook = $('span.facebook');
+    var fb_info = $('div.facebook');
     facebook.mouseenter(function(){
     	$(this).children().animate({color:'#6600CC'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.facebook');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        fb_info.show(600);
     });
     facebook.mouseleave(function(){
     	$(this).children().animate({color:'#222'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        fb_info.hide(600);
     });
-    
+
+
+    var skype = $('span.skype');
+    var skype_info = $('div.skype');
     skype.mouseenter(function(){
     	$(this).children().animate({color:'#3D003D'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.skype');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        skype_info.show(600);
     });
     skype.mouseleave(function(){
     	$(this).children().animate({color:'#222'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
+        skype_info.hide(600);
     });
+
+    //var images = $('.thumbnail');
+    //images.mouseenter(function(){
+    //    $(this).children('img.regular').hide();
+    //    $(this).children('img.hover').show();
+    //});
+    //images.mouseleave(function(){
+    //    $(this > 'img.hover').hide();
+    //    $(this > 'img.regular').show();
+    //});
 
     var play = $('.play');
     var new_play = $('.hover_play');
-
     play.mouseenter(function(){
-        new_play.removeClass('hidden');
-        $(this).fadeOut(0);
-        new_play.fadeIn(0);
+        $(this).hide();
+        new_play.show();
     });
     new_play.mouseleave(function(){
-        $(this).fadeOut(0);
-        $(this).addClass('hidden');
-        play.fadeIn(0);
+        $(this).hide();
+        play.show();
     });
 
     var work = $('.work');
     var new_work = $('.hover_work');
-
     work.mouseenter(function(){
-        new_work.removeClass('hidden');
-        $(this).fadeOut(0);
-        new_work.fadeIn(0);
+        $(this).hide();
+        new_work.show();
     });
     new_work.mouseleave(function(){
-        $(this).fadeOut(0);
-        $(this).addClass('hidden');
-        work.fadeIn(0);
+        $(this).hide();
+        work.show();
+    });
+
+    var study = $('.study');
+    var new_study = $('.hover_study');
+    study.mouseenter(function(){
+        $(this).hide();
+        new_study.show();
+    });
+    new_study.mouseleave(function(){
+        $(this).hide();
+        study.show();
+    });
+
+    var travel = $('.travel');
+    var new_travel = $('.hover_travel');
+    travel.mouseenter(function(){
+        $(this).hide();
+        new_travel.show();
+    });
+    new_travel.mouseleave(function(){
+        $(this).hide();
+        travel.show();
+    });
+
+    var service = $('.service');
+    var new_service = $('.hover_service');
+    service.mouseenter(function(){
+        $(this).hide();
+        new_service.show();
+    });
+    new_service.mouseleave(function(){
+        $(this).hide();
+        service.show();
+    });
+
+    var blog = $('.blog');
+    var new_blog = $('.hover_blog');
+    blog.mouseenter(function(){
+        $(this).hide();
+        new_blog.show();
+    });
+    new_blog.mouseleave(function(){
+        $(this).hide();
+        blog.show();
     });
 
 };

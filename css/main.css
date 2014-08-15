@@ -122,19 +122,20 @@ textarea {
     padding-top: 5px;
 }
 
-.hover {
-    background-image:url('../img/rsz_panorama.jpg');
-    height: 384px;
+.hoverer {
+    height: 600px;
+    background:url('../img/rsz_panorama.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
 }
 
-.slide {
+.info-box {
 	display: none;
 }
-.active_slide{
-	display:block;
-}
 
-.slide .container {
+.info-box .container {
     text-align: center;
     background-color: #fff;
     opacity: 0.97;
@@ -143,23 +144,22 @@ textarea {
     width:500px;
 }
 
-.slide h3{
+.info-box h3{
     color: #5a5a5a;
     font-size: 24px;
     text-transform: uppercase;
 }
 
-.slide h5 {
+.info-box h5 {
     font-size: 24px;
     font-family: 'Shift', sans-serif;
     font-weight:bold;
 }
 
-.slide p {
+.info-box p {
     font-size: 18px;
     color: #222;
 }
-
 
 .detailed_links {
     border-top: 1px solid #dbdbdb;
@@ -192,6 +192,10 @@ textarea {
 .detailed_links .thumbnail{
     background-color: #000;
     border-color: #000;
+}
+
+.thumbnail .hover{
+    display: none;
 }
 
 .footer{
