@@ -1,6 +1,5 @@
 var main = function(){
     var name = $( '.name' );
-    var home = $('.home_link');
     var resume = $('.res_link');
     var linked_in =  $('.li_glyph');
     var github = $('.git_glyph');
@@ -19,28 +18,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
         });
     name.mouseleave(function(){
-    	$(this).animate({color:'#5a5a5a'});
-        var currentSlide = $(".active-slide");
-        var nextSlide = $(".intro");
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
-    });
-    
-    home.mouseenter(function(){
-    	$(this).children().animate({color:'#FF9900'});
-        var currentSlide = $('.active-slide');
-        var nextSlide = $('.home');
-
-        currentSlide.fadeOut(600);
-        currentSlide.removeClass("active-slide");
-        nextSlide.fadeIn(600);
-        nextSlide.addClass("active-slide");
-    });
-    home.mouseleave(function(){
-    	$(this).children().animate({color:'#5a5a5a'});
+    	$(this).animate({color:'#fff'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -51,7 +29,7 @@ var main = function(){
     });
     
     resume.mouseenter(function(){
-    	$(this).children().animate({color:'#FFFF00'});
+    	$(this).children().animate({color:'#FF9900'});
         var currentSlide = $('.active-slide');
         var nextSlide = $('.resume');
 
@@ -61,7 +39,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     resume.mouseleave(function(){
-    	$(this).children().animate({color:'#5a5a5a'});
+    	$(this).children().animate({color:'#fff'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -82,7 +60,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     linked_in.mouseleave(function(){
-    	$(this).children().animate({color:'#FFFFFF'});
+    	$(this).children().animate({color:'#222'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -103,7 +81,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     github.mouseleave(function(){
-    	$(this).children().animate({color:'#FFFFFF'});
+    	$(this).children().animate({color:'#222'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -124,7 +102,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     google.mouseleave(function(){
-    	$(this).children().animate({color:'#FFFFFF'});
+    	$(this).children().animate({color:'#222'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -145,7 +123,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     facebook.mouseleave(function(){
-    	$(this).children().animate({color:'#FFFFFF'});
+    	$(this).children().animate({color:'#222'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -166,7 +144,7 @@ var main = function(){
         nextSlide.addClass("active-slide");
     });
     skype.mouseleave(function(){
-    	$(this).children().animate({color:'#FFFFFF'});
+    	$(this).children().animate({color:'#222'});
         var currentSlide = $(".active-slide");
         var nextSlide = $(".intro");
 
@@ -175,7 +153,35 @@ var main = function(){
         nextSlide.fadeIn(600);
         nextSlide.addClass("active-slide");
     });
-	 
+
+    var play = $('.play');
+    var new_play = $('.hover_play');
+
+    play.mouseenter(function(){
+        new_play.removeClass('hidden');
+        $(this).fadeOut(0);
+        new_play.fadeIn(0);
+    });
+    new_play.mouseleave(function(){
+        $(this).fadeOut(0);
+        $(this).addClass('hidden');
+        play.fadeIn(0);
+    });
+
+    var work = $('.work');
+    var new_work = $('.hover_work');
+
+    work.mouseenter(function(){
+        new_work.removeClass('hidden');
+        $(this).fadeOut(0);
+        new_work.fadeIn(0);
+    });
+    new_work.mouseleave(function(){
+        $(this).fadeOut(0);
+        $(this).addClass('hidden');
+        work.fadeIn(0);
+    });
+
 };
 
 

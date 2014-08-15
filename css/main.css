@@ -90,37 +90,36 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.name{
-	color: #5a5a5a;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 10px;
-}
-.name:hover{
-	text-decoration:underline;
-}
-
-.nav{
-    padding-top: 15px;
+.navbar-inverse {
+    padding-top: 5px;
     padding-bottom: 5px;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
 }
 
-.nav a {
-    color: #5a5a5a;
+.navbar-inverse a {
+    color:#fff;
     font-size: 16px;
     font-weight: bold;
-    padding: 14px 10px;
     text-transform: uppercase;
+    padding: 10px 10px;
 }
 
-.nav li {
-    display: inline;
+.navbar-inverse img{
+	border:solid medium;
+	color: #222;
 }
-
-.nav img{
-	border-style:solid;
-	border-width:medium;
-	color: #FFFFFF;
+.navbar-inverse span{
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.navbar-inverse span:hover{
+    text-decoration:underline;
+}
+.navbar-inverse .pull-left{
+    padding-top: 5px;
 }
 
 .hover {
@@ -141,6 +140,13 @@ textarea {
     opacity: 0.97;
     position: relative;
     top:50px;
+    width:500px;
+}
+
+.slide h3{
+    color: #5a5a5a;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .slide h5 {
@@ -156,7 +162,9 @@ textarea {
 
 
 .detailed_links {
-    background-color:#efefef;
+    border-top: 1px solid #dbdbdb;
+    padding-top: 50px;
+    background-image: url("../img/congruent_outline.png");
     border-bottom:1px solid #dbdbdb;
     text-align: center;
 }
@@ -171,7 +179,24 @@ textarea {
     margin-bottom:13px;
 }
 
+.detailed_links img{
+    border-style:solid;
+    border-width:medium;
+    color: #000;
+}
+
+.detailed_links img:hover{
+    color:#ffff00;
+}
+
+.detailed_links .thumbnail{
+    background-color: #000;
+    border-color: #000;
+}
+
 .footer{
+    background-color: #222222;
+    color: #fff;
 	font-size:11px;
 	position: relative;
 	text-align: center;
