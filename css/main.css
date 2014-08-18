@@ -122,6 +122,35 @@ textarea {
     padding-top: 5px;
 }
 
+span.about-me:hover{
+    color:#FF0066;
+}
+
+span.resume a:hover{
+    color:#FF9900;
+}
+
+span.linked_in img:hover{
+    color:#66FF33;
+}
+
+span.github img:hover{
+    color:#00FFFF;
+}
+
+span.google_plus img:hover{
+    color: #0000FF;
+}
+
+span.facebook img:hover{
+    color:#6600CC;
+}
+
+span.skype img:hover{
+    color:#3D003D;
+}
+
+
 .hoverer {
     height: 600px;
     background:url('../img/rsz_panorama.jpg') no-repeat center;
