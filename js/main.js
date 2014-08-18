@@ -3,7 +3,7 @@ var main = function(){
     navbar.children().children().children('span').mouseenter(function(){
         $('div.'+ $(this).attr('class')).show(600);
     });
-    navbar.children().children().children().mouseleave(function(){
+    navbar.children().children().children('span').mouseleave(function(){
         $('div.' + $(this).attr('class')).hide(600);
     });
 
