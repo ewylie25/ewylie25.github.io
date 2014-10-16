@@ -1,5 +1,5 @@
 var main = function(){
-    var navbar = $('.navbar-inverse');
+    var navbar = $('.navbar');
     navbar.children().children().children('span').mouseenter(function(){
         $('div.'+ $(this).attr('class')).show(600);
     });
