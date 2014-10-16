@@ -161,6 +161,7 @@ span.skype img:hover{
 }
 
 .info-box {
+    font-family:"adelle";
 	display: none;
 }
 
@@ -191,6 +192,7 @@ span.skype img:hover{
 }
 
 .intro {
+    font-family:"adelle";
     padding-top: 10px;
     background: url("../img/dark_exa.png");
     text-align: center;
