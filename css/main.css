@@ -190,7 +190,7 @@ span.skype img:hover{
     color: #222;
 }
 
-.intro {
+.main {
     font-family:"adelle";
     padding-top: 10px;
     background: url("../img/dark_exa.png");
@@ -198,22 +198,24 @@ span.skype img:hover{
     padding-bottom: 20px;
 }
 
-.intro .container{
+.main .container{
     border: 1px solid #dbdbdb;
     background-color: #000;
+    margin-bottom: 30px;
+    padding-top: 10px;
 }
 
-.intro h2{
+.main h2{
     color:#fff;
     font-size:24px;
 }
 
-.intro p{
+.main p{
     color:#ccc;
     font-size:15px;
 }
 
-.intro a{
+.main a{
     color:#444;
     font-size: 16px;
     font-weight: bold;
@@ -221,45 +223,33 @@ span.skype img:hover{
     text-transform: uppercase;
 }
 
-.intro a:hover{
+.main a:hover{
     color:#fff;
 }
 
-.detailed_links {
-    border-top: 1px solid #dbdbdb;
-    padding-top: 50px;
-    background-image: url("../img/congruent_outline.png");
-    border-bottom:1px solid #dbdbdb;
-    text-align: center;
+.formal_education p {
+    text-align: left;
+    color:#ccc;
 }
 
-.detailed_links h2{
-    color:#393c3d;
-    font-size:24px;
+.formal_education h4{
+    color: #fff;
 }
 
-.detailed_links p{
-    font-size:15px;
-    margin-bottom:13px;
+.formal_education .school{
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
-.detailed_links img{
-    border-style:solid;
-    border-width:medium;
-    color: #000;
+.formal_education a{
+    text-transform: none;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: normal;
 }
 
-.detailed_links img:hover{
-    color:#ffff00;
-}
-
-.detailed_links .thumbnail{
-    background-color: #000;
-    border-color: #000;
-}
-
-.thumbnail .hover{
-    display: none;
+.formal_education a:hover{
+    color:#fff;
 }
 
 .footer{
