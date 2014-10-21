@@ -252,6 +252,18 @@ span.skype img:hover{
     color:#fff;
 }
 
+.formal_education .school-details{
+    background-color: #222;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.formal_education .school-details p{
+    font-size: 12px;
+    font-family: "adelle";
+}
+
 .footer{
     background-color: #222222;
     color: #fff;
