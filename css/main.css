@@ -232,7 +232,7 @@ span.skype img:hover{
     color:#ccc;
 }
 
-.formal_education h4{
+.main .container h4{
     color: #fff;
 }
 
@@ -253,7 +253,6 @@ span.skype img:hover{
 }
 
 .formal_education .school-details{
-    background-color: #222;
     margin-right: 200px;
     margin-left: 200px;
     margin-bottom: 50px;
@@ -262,6 +261,14 @@ span.skype img:hover{
 .formal_education .school-details p{
     font-size: 12px;
     font-family: "adelle";
+}
+.formal_education .course-details table{
+    color: #ccc;
+    font-size: 12px;
+    margin-right: 200px;
+}
+.formal_education td{
+    text-align: left;
 }
 
 .footer{

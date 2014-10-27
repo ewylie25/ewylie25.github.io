@@ -1,4 +1,9 @@
 var main = function(){
+
+    $('.container.sub').hide();
+
+    $('.ed-sub').hide();
+
     var navbar = $('.navbar');
     navbar.children().children().children('span').mouseenter(function(){
         $('div.'+ $(this).attr('class')).show(600);
@@ -14,6 +19,16 @@ var main = function(){
         $('div.'+ $(this).attr('class')).hide(600);
     });
 
+    $('.main-link').click(function(){
+        var target = "#" + $(this).data("target");
+        //$(".container.sub").not(target).hide();
+        $(target).toggle();
+    });
+
+    $('.ed-link').click(function(){
+        var target = "#" +$(this).data("target");
+        $(target).toggle();
+    });
 };
 
 
