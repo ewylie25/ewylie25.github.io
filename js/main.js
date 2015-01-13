@@ -4,6 +4,7 @@ var main = function(){
 
     $('.ed-sub').hide();
 
+    $('div.about-me').show(600);
     var navbar = $('.navbar');
     navbar.children().children().children('span').mouseenter(function(){
         $('div.'+ $(this).attr('class')).show(600);
